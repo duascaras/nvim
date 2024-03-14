@@ -1,5 +1,5 @@
 -- Just trying it out
-vim.opt.guicursor = ""
+-- vim.opt.guicursor = ""
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -34,5 +34,3 @@ vim.opt.fixeol = false
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
-
-vim.g.mapleader = " "

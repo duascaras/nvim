@@ -24,7 +24,7 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
--- vininew921 is a brotherman 
+-- vininew921 is a brotherman
 vim.keymap.set({ "n", "i" }, "<C-s>", "<Esc>:update<CR>", { silent = true })
 
 vim.keymap.set("n", "Q", "<nop>")
