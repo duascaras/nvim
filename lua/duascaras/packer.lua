@@ -24,6 +24,10 @@ return require('packer').startup(function(use)
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    -- These optional plugins should be loaded directly because of a bug in Packer lazy loading
+    use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
+    use 'lewis6991/gitsigns.nvim'     -- OPTIONAL: for git status
+    use 'romgrk/barbar.nvim'
 
     use {
         'VonHeikemen/lsp-zero.nvim',
