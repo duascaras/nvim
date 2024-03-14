@@ -6,7 +6,7 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         'lua_ls',
         'pylsp',
-	'gopls',
+        'gopls',
     },
     handlers = {
         lsp.default_setup,
