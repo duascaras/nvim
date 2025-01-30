@@ -1,11 +1,18 @@
 return {
-  {
     "catppuccin/nvim",
-    lazy = false,
     name = "catppuccin",
     priority = 1000,
-    config = function()
-      vim.cmd.colorscheme "catppuccin"
-    end
-  }
+    opts = {
+        term_colors = true,
+        transparent_background = true,
+        dim_inactive = {
+            enabled = false,
+            shade = "dark",
+            percentage = 1,
+        },
+        config = function(_, opts)
+            require("catppuccin").setup(opts)
+            vim.cmd.colorscheme("catppuccin")
+        end,
+    },
 }
